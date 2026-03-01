@@ -1,12 +1,29 @@
 import React from 'react'
 import Logo from './assets/logo.png'
 import Home from './pages/Home'
+import { Route, Routes } from 'react-router-dom'
+import Doctors from './pages/Doctors'
+import DoctorDetail from './pages/DoctorDetail'
+import Service from './pages/Service'
+import ServiceDetail from './pages/ServiceDetailPage'
+import Contact from './pages/Contact'
+import Login from './pages/Login'
+import DHome from './pages/DHome'
 
 
 const App = () => {
   return (
     <div>
-      <Home/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/doctors" element={<Doctors />} />
+        <Route path="/doctors/:id" element={<DoctorDetail />} />
+        <Route path="/services" element={<Service />} />
+        <Route path="/services/:id" element={<ServiceDetail />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/doctor-admin/login" element={<Login />} />
+        <Route path="/doctor-admin/:id" element={<DHome />} />
+      </Routes>
     </div>
   )
 }
