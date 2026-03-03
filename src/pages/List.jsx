@@ -1,14 +1,15 @@
 import React from 'react'
 import DoctorNavbar from '../doctor/DoctorNavbar'
-import DashboardPage from '../doctor/DashboardPage'
+import ListPage from '../doctor/ListPage'
 
-const DHome = () => {
+
+const List = () => {
   return (
     <div>
         <DoctorNavbar/>
-        <DashboardPage/>
+        <ListPage/>
     </div>
   )
 }
 
-export default DHome
+export default List
