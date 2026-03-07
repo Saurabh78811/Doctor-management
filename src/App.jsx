@@ -13,6 +13,8 @@ import List from './pages/List'
 import EditProfile from './doctor/EditProfile'
 import Appointment from './pages/Appointment'
 import { CircleChevronUp } from 'lucide-react'
+import VerifyPaymentPage from '../VerifyPaymentPage'
+import VerifyServicePaymentPage from '../VerifyServicePaymentPage'
 // import VerifyPaymentsPage from '../VerifyPaymentPage'
 // import VerifyServicePaymentsPage from '../VerifyServicePaymentsPage'
 
@@ -82,12 +84,12 @@ const App = () => {
         <Route path="/doctor-admin/:id" element={<DHome />} />
         <Route path="/doctor-admin/:id/appointments" element={<List />} />
         <Route path="/doctor-admin/:id/profile/edit" element={<EditProfile />} />
-        {/* for the payment verification
-        <Route path="/appointment/sucess" element={<VerifyPaymentsPage/>}/>
-        <Route path="/appointment/cancel" element={<VerifyPaymentsPage/>}/>
+        {/* for the payment verification */}
+        <Route path="/appointment/success" element={<VerifyPaymentPage/>}/>
+        <Route path="/appointment/cancel" element={<VerifyPaymentPage/>}/>
 
-        <Route path="/service-appointment/sucess" element={<VerifyServicePaymentsPage/>}/>
-        <Route path="/service-appointment/cancel" element={<VerifyServicePaymentsPage/>}/> */}
+        <Route path="/service-appointment/success" element={<VerifyServicePaymentPage/>}/>
+        <Route path="/service-appointment/cancel" element={<VerifyServicePaymentPage/>}/>
       </Routes>
     </div>
     <ScrollButton />
