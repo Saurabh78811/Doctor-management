@@ -5,7 +5,7 @@ import { useAuth, useUser } from '@clerk/clerk-react';
 import { Bell, CalendarDays, CheckCircle, Clock, CreditCard, Wallet, XCircle } from 'lucide-react';
 import { Toaster } from 'react-hot-toast';
 
-const API_BASE = "http://localhost:5000";
+const API_BASE = "https://backendmacs.onrender.com";
 const API = axios.create({baseURL : API_BASE})
 //helper function 
 
