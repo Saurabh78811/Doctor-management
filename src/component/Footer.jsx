@@ -192,7 +192,7 @@ const Footer = () => {
                     </div>
                     <div className={footerStyles.designerText}>
                         <span>Designed by</span>
-                        <a href="" target="_blank" className={footerStyles.designerLink}>
+                        <a href="https://saurabh-portfolio-ljxd.vercel.app" target="_blank" className={footerStyles.designerLink}>
                             Saurabh Verma 
                         </a>
                     </div>
